@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+<main>
+  <h1 id="title">Survey Form</h1>
+  <div class="form-holder">
+    <p id="description">Quick questions about our multicultural Night</p>
+    <form id="survey-form" class="global" action="index.html" method="GET">
+<!-- name -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="name" id="name-label">Name</label>
+        </div>
+        <div class="f-right">
+          <input id="name" required type="text" name="name" placeholder="full name" value="">
+        </div>
+      </div>
+<!-- Email -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="email" id="email-label">Email</label>
+        </div>
+        <div class="f-right">
+          <input id="email" required type="email" name="email" placeholder="your@email.com" value="">
+        </div>
+      </div>
+<!-- Age -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="age" id="number-label">Age</label>
+        </div>
+        <div class="f-right">
+          <input id="number" required type="number" name="age" id="number" min="6" max="100" class="input-field" placeholder="Age">
+        </div>
+      </div>
+<!-- Role -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="role" id="role-label">What's your current role</label>
+        </div>
+        <div class="f-right">
+            <select id="dropdown" class="" name="Role">
+              <option disabled selected>Select an option</option>
+              <option value="faculty">faculty</option>
+              <option value="parent">parent</option>
+              <option value="staff">staff</option>
+              <option value="student">student</option>
+              <option value="visitor">visitor</option>
+            </select>
+        </div>
+      </div>
+<!-- Likely -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="Likely" id="Likely-label">How likely would you be to come <br id="cheat"/> to our next event</label>
+        </div>
+        <div class="f-right">
+          <div class="lazylist">
+            <input type="radio" name="Likely" value="Definitely">
+            <label for="Definitely">Definitely</label></br>
+
+            <input type="radio" name="Likely" value="maybe">
+            <label for="maybe">Maybe</label></br>
+
+            <input type="radio" name="Likely" value="not-sure">
+            <label for="not-sure">Not sure</label></br>
+          </div>
+        </div>
+      </div>
+<!-- Favorite activity -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="activity" id="activity-label">What was your favorite activity</label>
+        </div>
+        <div class="f-right">
+          <div class="lazylist">
+            <input type="checkbox" name="activity" value="music">
+            <label for="Definitely">The music</label></br>
+
+            <input type="checkbox" name="activity" value="food">
+            <label for="maybe">The food</label></br>
+
+            <input type="checkbox" name="activity" value="booths">
+            <label for="not-sure">The booths</label></br>
+
+            <input type="checkbox" name="activity" value="performances">
+            <label for="Definitely">The performances</label></br>
+
+            <input type="checkbox" name="activity" value="presentations">
+            <label for="maybe">The presentations</label></br>
+
+            <input type="checkbox" name="activity" value="mingling">
+            <label for="not-sure">Mingling</label></br>
+          </div>
+        </div>
+      </div>
+<!-- Comments -->
+      <div class="f-row">
+        <div class="f-left">
+          <label for="comments" id="comments-label">What could we do better next time</label>
+        </div>
+        <div class="f-right">
+          <textarea id="comments-textarea" rows="3" cols="30">Please leave any comments..</textarea>
+        </div>
+      </div>
+<!-- Submit -->
+ <button id="submit" type="submit">Submit</button>
+    </form>
+  </div><!-- end form holder -->
+</main>
+  </body>
+</html>
